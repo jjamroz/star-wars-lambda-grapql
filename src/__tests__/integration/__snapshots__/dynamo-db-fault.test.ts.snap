@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`API TESTS - DB error  Doesnt crash app CREATE character 1`] = `
+{
+  "data": {
+    "createCharacter": null,
+  },
+  "errors": [
+    [GraphQLError: INTERNAL_DB_ERROR],
+  ],
+  "extensions": undefined,
+  "http": {
+    "headers": Headers {
+      Symbol(map): {},
+    },
+  },
+}
+`;
+
+exports[`API TESTS - DB error  Doesnt crash app DELETE character 1`] = `
+{
+  "data": {
+    "deleteCharacter": null,
+  },
+  "errors": [
+    [GraphQLError: INTERNAL_DB_ERROR],
+  ],
+  "extensions": undefined,
+  "http": {
+    "headers": Headers {
+      Symbol(map): {},
+    },
+  },
+}
+`;
+
+exports[`API TESTS - DB error  Doesnt crash app GET ALL characters 1`] = `
+{
+  "data": null,
+  "errors": [
+    [GraphQLError: INTERNAL_DB_ERROR],
+  ],
+  "extensions": undefined,
+  "http": {
+    "headers": Headers {
+      Symbol(map): {},
+    },
+  },
+}
+`;
+
+exports[`API TESTS - DB error  Doesnt crash app GET character 1`] = `
+{
+  "data": {
+    "getCharacter": null,
+  },
+  "errors": [
+    [GraphQLError: INTERNAL_DB_ERROR],
+  ],
+  "extensions": undefined,
+  "http": {
+    "headers": Headers {
+      Symbol(map): {},
+    },
+  },
+}
+`;
+
+exports[`API TESTS - DB error  Doesnt crash app UPDATE character 1`] = `
+{
+  "data": {
+    "updateCharacter": null,
+  },
+  "errors": [
+    [GraphQLError: INTERNAL_DB_ERROR],
+  ],
+  "extensions": undefined,
+  "http": {
+    "headers": Headers {
+      Symbol(map): {},
+    },
+  },
+}
+`;
