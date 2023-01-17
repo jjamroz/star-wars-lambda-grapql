@@ -1,17 +1,12 @@
-import { AuthenticationError } from 'apollo-server-lambda';
-
+import { AuthenticationError, ApolloServer } from 'apollo-server-lambda';
 require('dotenv').config();
 import { typeDefs } from './api/schema';
 import { resolvers } from './api/resolvers';
-
-const { ApolloServer } = require('apollo-server-lambda');
-const { ApolloServerPluginLandingPageGraphQLPlayground } = require('apollo-server-core');
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
-  plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
   csrfPrevention: true,
   cache: 'bounded',
   context: ({ event }) => {
